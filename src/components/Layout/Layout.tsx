@@ -1,6 +1,4 @@
-//# Crear src/components/Layout/Layout.tsx
-//@'
-import React, { ReactNode } from "react"
+import type { ReactNode } from "react"
 import { useNavigate } from "react-router-dom"
 import {
   AppBar,

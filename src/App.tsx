@@ -1,9 +1,8 @@
-//# Reemplazar contenido de src/App.tsx
-//@'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Layout from "./components/Layout/Layout"
-import LandingPage from "./pages/LandingPage/LandingPage"
-import UploadFlow from "./pages/UploadFlow/UploadFlow"
+﻿import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import UploadFlow from "./pages/UploadFlow/UploadFlow";
+import ResumenPage from "./pages/ResumenPage/ResumenPage";
 
 function App() {
   return (
@@ -12,11 +11,11 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/upload" element={<UploadFlow />} />
+          <Route path="/resumen" element={<ResumenPage />} />
         </Routes>
       </Layout>
     </Router>
-  )
+  );
 }
 
-export default App
-//'@ | Set-Content -Path "src\App.tsx" -Encoding UTF8
+export default App;
