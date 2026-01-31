@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"dynamodb_table","Source":"./modules/dynamodb-table","Dir":"modules/dynamodb-table"},{"Key":"lambda_api","Source":"./modules/lambda-api","Dir":"modules/lambda-api"},{"Key":"monitoring","Source":"./modules/monitoring","Dir":"modules/monitoring"},{"Key":"s3_website","Source":"./modules/s3-website","Dir":"modules/s3-website"}]}
