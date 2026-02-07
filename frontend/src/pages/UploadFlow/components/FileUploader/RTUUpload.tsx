@@ -41,10 +41,10 @@ const RTUUpload: React.FC<RTUUploadProps> = (props) => {
         title="Registro Tributario Unificado (RTU)"
         description="Documento oficial de identificación fiscal emitido por la SAT"
         acceptedFiles={{
-          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [".xlsx"],
-          "application/vnd.ms-excel": [".xls"],
+          "application/*": [".xls", ".xlsx", ".xlsm", ".xltx", ".xltm", ".xlam"],
           "text/csv": [".csv"]
         }}
+
         requirements={requirements}
         onFileUpload={props.onFileUpload}
         progress={props.progress}
