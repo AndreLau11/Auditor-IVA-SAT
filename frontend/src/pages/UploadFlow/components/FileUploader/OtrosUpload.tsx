@@ -65,13 +65,14 @@ const OtrosUpload: React.FC<OtrosUploadProps> = (props) => {
         title="Documentos Adicionales (Opcional)"
         description="Otros documentos fiscales relevantes para tu declaración"
         acceptedFiles={{
-          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [".xlsx"],
-          "application/vnd.ms-excel": [".xls"],
-          "text/csv": [".csv"],
-          "application/pdf": [".pdf"],
-          "image/jpeg": [".jpg", ".jpeg"],
-          "image/png": [".png"]
-        }}
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [".xlsx"], // Excel moderno
+          "application/vnd.ms-excel": [".xls"], // Excel antiguo
+          "application/vnd.ms-excel.sheet.macroEnabled.12": [".xlsm"], // Excel con macros
+          "application/vnd.ms-excel.template.macroEnabled.12": [".xltm"], // Plantillas con macros
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.template": [".xltx"], // Plantillas modernas
+          "application/vnd.ms-excel.addin.macroEnabled.12": [".xlam"], // Complementos de Excel
+          "text/csv": [".csv"] // Archivos CSV
+        }}        
         requirements={requirements}
         onFileUpload={props.onFileUpload}
         progress={props.progress}
