@@ -65,6 +65,7 @@ const OtrosUpload: React.FC<OtrosUploadProps> = (props) => {
         title="Documentos Adicionales (Opcional)"
         description="Otros documentos fiscales relevantes para tu declaración"
         acceptedFiles={{
+<<<<<<< Updated upstream
           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [".xlsx"], // Excel moderno
           "application/vnd.ms-excel": [".xls"], // Excel antiguo
           "application/vnd.ms-excel.sheet.macroEnabled.12": [".xlsm"], // Excel con macros
@@ -73,6 +74,18 @@ const OtrosUpload: React.FC<OtrosUploadProps> = (props) => {
           "application/vnd.ms-excel.addin.macroEnabled.12": [".xlam"], // Complementos de Excel
           "text/csv": [".csv"] // Archivos CSV
         }}        
+=======
+            "application/vnd.ms-excel": [".xls"],
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [".xlsx"],
+            "application/vnd.ms-excel.sheet.macroEnabled.12": [".xlsm"],
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.template": [".xltx"],
+            "application/vnd.ms-excel.template.macroEnabled.12": [".xltm"],
+            "application/vnd.ms-excel.addin.macroEnabled.12": [".xlam"],
+            "text/csv": [".csv"],
+            "application/vnd.oasis.opendocument.spreadsheet": [".ods"]
+        }}
+
+>>>>>>> Stashed changes
         requirements={requirements}
         onFileUpload={props.onFileUpload}
         progress={props.progress}
